@@ -2,4 +2,190 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  width: 375px;
+  font-family: var(--main-font), sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
+  background-color: #000028;
+  background-position: fixed;
+  line-height: 130%;
+}
+
+.header{
+  display: grid;
+  padding: 10px;
+  height: 100vh;
+  background-image: url('../images/cover-image-dark.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  color: var(--accent-color);
+  position: relative;
+}
+
+.decorated-zone::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.decorated-zone::after{
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.header_pseudo_decorative{
+  text-transform: uppercase;
+  justify-self: end;
+  margin-inline-end: 28px;
+  line-height: 25px;
+}
+
+.header_pseudo_decorative::after{
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  right: 19px;
+  top: 18px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px var(--accent-color);
+}
+
+.header__theme-menu{
+  margin-block-start: 39px;
+  justify-self: end;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.header__theme-menu-button{
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  padding: 3px 13px;
+  line-height: 100%;  
+}
+
+.header__theme-menu-button:hover{
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus{
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible{
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:not(:first-child){
+  margin-top: 10px;
+}
+
+.header__theme-menu-button_active{
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header_page-heading{
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  margin-block-start: 68px;
+  margin-block-end: 55px;
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header_description{
+  font-weight: 700;
+  color: var(--text-color-with-bg);
+  line-height: 130%;
+  margin-bottom: 55px;
+}
+
+.title-decor{
+  background-color: var(--accent-color);
+}
+
+.content{
+  padding-top: 40px;
+  padding-inline: 10px;
+}
+
+.content_section-heading{
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-top: 50px;
+}
+
+.section-subheading{
+  color: var(--text-color-with-bg);
+  font-size: 18px;
+  margin: 20px 0 10px;
+  font-weight: 700;
+}
+
+.content section:first-child .content_section-heading{
+  margin-top: 0;
+}
+
+.content_section-link{
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-color);
+  text-shadow: 1px 1px 0 var(--accent-color);
+}
+
+.concentration-heading {
+  margin: 20px 0 10px;
+  color: var(--text-color-with-bg);
+  font-weight: 400;
+}
+
+.content_gallery{
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+.content_gallery .section-subheading{
+  margin-bottom: 0;
+}
+
+.content_gallery img{
+  width: 100%;
+}
+
+
+.footer{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.footer-heading{
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  text-align: center;
 }

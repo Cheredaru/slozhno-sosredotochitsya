@@ -3,6 +3,13 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme_dark{
+  --main-font: IBM Plex mono;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --heading-color: #DB00FF;
+  --text-color-with-bg: #000028;
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
