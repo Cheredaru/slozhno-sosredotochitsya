@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  width: 375px;
+  width: 100vw;
   font-family: var(--main-font), sans-serif;
   color: var(--text-color);
   font-size: 18px;
@@ -11,8 +11,11 @@
   line-height: 130%;
 }
 
+/*---------------Header---------------*/
+
 .header{
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
   height: 100vh;
   background-image: url('../images/cover-image-dark.png');
@@ -22,6 +25,7 @@
   background-color: rgba(0,0,0,0.5);
   color: var(--accent-color);
   position: relative;
+  align-items: center;
 }
 
 .decorated-zone::before{
@@ -46,14 +50,18 @@
   left: 10px;
 }
 
-.header_pseudo_decorative{
+.header__theme-menu::before{
+  content: 'REC';
+  position: absolute;
+  top: 10px;
+  right: 12px;
   text-transform: uppercase;
   justify-self: end;
   margin-inline-end: 28px;
   line-height: 25px;
 }
 
-.header_pseudo_decorative::after{
+.header__theme-menu::after{
   content: '';
   position: absolute;
   width: 9px;
@@ -66,8 +74,8 @@
 }
 
 .header__theme-menu{
-  margin-block-start: 39px;
   justify-self: end;
+  align-content: center;
 }
 
 .header__theme-menu-list{
@@ -109,8 +117,6 @@
 .header_page-heading{
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  margin-block-start: 68px;
-  margin-block-end: 55px;
   color: var(--heading-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -119,33 +125,72 @@
   font-weight: 700;
   color: var(--text-color-with-bg);
   line-height: 130%;
-  margin-bottom: 55px;
 }
 
 .title-decor{
   background-color: var(--accent-color);
 }
 
+
+@media(min-width:500px){
+  .header{
+    padding: 20px;
+  }
+  .decorated-zone::before{
+    right: 20px;
+    top: 20px;
+  }
+  
+  .decorated-zone::after{
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .header__theme-menu::before{
+    margin-inline-end: 38px;
+    margin-block-start: 10px;
+  }
+  
+  .header__theme-menu::after{
+    right: 29px;
+    top: 28px;
+  }
+
+  .header_page-heading{
+    margin-inline-start: -20px;
+  }
+
+
+  .header_description{
+    width: calc(50vw - 20px);
+    justify-self: end;
+  }
+}
+/*---------------Main---------------*/
+
 .content{
-  padding-top: 40px;
+  padding-block: 40px;
   padding-inline: 10px;
+}
+
+.content_section:not(:first-child){
+  margin-block-start: 50px;
 }
 
 .content_section-heading{
   font-size: 18px;
   color: var(--accent-color);
-  margin-top: 50px;
 }
 
 .section-subheading{
   color: var(--text-color-with-bg);
   font-size: 18px;
-  margin: 20px 0 10px;
+  margin-block: 20px 10px;
   font-weight: 700;
 }
 
-.content section:first-child .content_section-heading{
-  margin-top: 0;
+.section-subheading:not(:first-child){
+  margin-top: 20px;
 }
 
 .content_section-link{
@@ -160,26 +205,79 @@
   font-weight: 400;
 }
 
-.content_gallery{
+.gallery-pics{
+  margin-block-start: 10px;
   display: grid;
   gap: 10px;
-  margin-top: 30px;
 }
+
 .content_gallery .section-subheading{
-  margin-bottom: 0;
+  margin-block: 0;
 }
 
 .content_gallery img{
   width: 100%;
 }
 
+@media(min-width:500px){
+  .content{
+    padding: 60px 20px;
+  }
+
+  .content_section:not(:first-child){
+    margin-block-start: 80px;
+  }
+
+  .section-subheading{
+    margin-block-start: 0;
+  }
+
+  .double-column{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .gallery-pics{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-block-start: 20px;
+  }
+
+  .pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .pic-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .pic-2{
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+  }
+
+  .pic-3{
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+  }
+  
+  .pic-5{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+}
+/*---------------Footer---------------*/
 
 .footer{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
   position: relative;
 }
 
@@ -189,3 +287,4 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   text-align: center;
 }
+
