@@ -9,6 +9,9 @@
   --accent-color: #FF0070;
   --heading-color: #DB00FF;
   --text-color-with-bg: #000028;
+  --bg-color: #000028;
+  --section-heading-color: #ff0070;
+  --heading-shadow-color:#FF0070;
 }
 
 .page.theme_dark {
