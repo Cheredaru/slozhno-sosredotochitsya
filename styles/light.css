@@ -42,7 +42,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme_auto {
+  :root .theme_auto {
     --main-font: IBM Plex mono;
     --text-color: #353430;
     --accent-color: #FF8DCB;
@@ -56,7 +56,7 @@
     background-color: var(--bg-color);
     background-image: none;
   }
-  
+
   .page.theme_auto .header__theme-menu::before,
   .page.theme_auto .header__theme-menu::after{
     display: none;
