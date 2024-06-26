@@ -54,12 +54,11 @@
     --section-heading-color: #353430;
   }
 
-  .page.theme_auto .header {
-    background-image: url(../images/cover-image-light.png);
+  .header_pseudo-element{
+    display: var(--display); 
   }
 
-  .page.theme_auto .header__theme-menu::before,
-  .page.theme_auto .header__theme-menu::after {
-    display: none;
+  .page.theme_auto .header {
+    background-image: url(../images/cover-image-light.png);
   }
 }

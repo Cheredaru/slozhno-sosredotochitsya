@@ -15,7 +15,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: min-content 1fr min-content 1fr;
   align-items: center;
   height: 100vh;
   padding: 10px;
@@ -49,7 +49,7 @@
   border-left: 1px solid var(--section-heading-color);
 }
 
-.header__theme-menu::before {
+.header_pseudo-element::before{
   content: "REC";
   position: absolute;
   top: 10px;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
 }
 
-.header__theme-menu::after {
+.header_pseudo-element::after{
   content: "";
   position: absolute;
   top: 18px;
@@ -301,6 +301,7 @@
   }
 
   .pic {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
