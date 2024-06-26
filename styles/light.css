@@ -44,14 +44,24 @@
 }
 
 @media (prefers-color-scheme: light) {
-:root {
-      /* Дублируем переменные светлой темы */
+  :root {
     --main-font: IBM Plex mono;
     --text-color: #353430;
     --accent-color: #FF8DCB;
     --heading-color: #FFC2E6;
     --text-color-with-bg: #353430;
-    --bg-color: #FFC2E6;
-    --heading-shadow-color:#FF0070;    
+    --bg-color: #FFEEF6;
+    --heading-shadow-color:#FF0070;
+    --section-heading-color: #353430;   
+  }
+  .page.theme_auto .header{
+    background-color: var(--bg-color);
+    background-image: none;
+  }
+  .page.theme_auto .decorated-zone::before,
+  .page.theme_auto .decorated-zone::after,
+  .page.theme_auto .header__theme-menu::before,
+  .page.theme_auto .header__theme-menu::after{
+    display: none;
   }
 }
