@@ -32,7 +32,7 @@
 }
 
 .page.theme_light .header{
-  background-image: url('../images/cover-image-light.png');
+  background-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .header__theme-menu::before,
@@ -49,13 +49,16 @@
     --text-color-with-bg: #353430;
     --bg-color: #FFEEF6;
     --heading-shadow-color:#ff8dcb;
-    --section-heading-color: #353430;   
+    --section-heading-color: #353430;  
   }
   .page.theme_auto .header{
-    background-image: url('../images/cover-image-light.png');
+    background-image: url(../images/cover-image-light.png);
   }
 
-  .page.theme_auto .header__theme-menu::before,
+  .page.theme_auto .header__theme-menu::before{
+    display: none;
+  }
+  
   .page.theme_auto .header__theme-menu::after{
     display: none;
   }
