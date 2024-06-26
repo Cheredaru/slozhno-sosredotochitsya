@@ -32,8 +32,7 @@
 }
 
 .page.theme_light .header{
-  background-color: var(--bg-color);
-  background-image: none;
+  background-image: url('../images/cover-image-light.png');
 }
 
 .page.theme_light .header__theme-menu::before,
@@ -53,8 +52,7 @@
     --section-heading-color: #353430;   
   }
   .page.theme_auto .header{
-    background-color: var(--bg-color);
-    background-image: none;
+    background-image: url('../images/cover-image-light.png');
   }
 
   .page.theme_auto .header__theme-menu::before,
