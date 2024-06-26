@@ -329,6 +329,10 @@
     grid-row: 1 / 2;
   }
 
+  .section-with-heading .content_section-heading{
+    display: block;
+  }
+  
   .section-columns-extended{
     grid-column: 2 / 4;
   }
