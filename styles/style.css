@@ -35,8 +35,8 @@
   right: 10px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--section-heading-color);
+  border-right: 1px solid var(--section-heading-color);
 }
 
 .decorated-zone::after {
@@ -46,8 +46,8 @@
   left: 10px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--section-heading-color);
+  border-left: 1px solid var(--section-heading-color);
 }
 
 .header__theme-menu::before {

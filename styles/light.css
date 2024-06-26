@@ -23,7 +23,7 @@
   --heading-color: #FFC2E6;
   --text-color-with-bg: #353430;
   --bg-color: #FFEEF6;
-  --heading-shadow-color:#FF0070;
+  --heading-shadow-color:#ff8dcb;
   --section-heading-color: #353430;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -36,30 +36,27 @@
   background-image: none;
 }
 
-.page.theme_light .decorated-zone::before,
-.page.theme_light .decorated-zone::after,
 .page.theme_light .header__theme-menu::before,
 .page.theme_light .header__theme-menu::after{
   display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root.theme_auto {
     --main-font: IBM Plex mono;
     --text-color: #353430;
     --accent-color: #FF8DCB;
     --heading-color: #FFC2E6;
     --text-color-with-bg: #353430;
     --bg-color: #FFEEF6;
-    --heading-shadow-color:#FF0070;
+    --heading-shadow-color:#ff8dcb;
     --section-heading-color: #353430;   
   }
   .page.theme_auto .header{
     background-color: var(--bg-color);
     background-image: none;
   }
-  .page.theme_auto .decorated-zone::before,
-  .page.theme_auto .decorated-zone::after,
+  
   .page.theme_auto .header__theme-menu::before,
   .page.theme_auto .header__theme-menu::after{
     display: none;
