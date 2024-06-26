@@ -5,7 +5,12 @@
 */
 
 :root.theme-light {
-  /* Переменные светлой темы */    
+  /* Переменные светлой темы */ 
+  --main-font: IBM Plex mono;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --heading-color: #FFC2E6;
+  --text-color-with-bg: #353430;   
 }
 
 .page.theme_light {
