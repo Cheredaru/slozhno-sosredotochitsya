@@ -318,12 +318,6 @@
 
 /*---------------Main Desktop---------------*/
 @media(min-width:769px){
-  .content_section{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
   .content_section-heading{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
