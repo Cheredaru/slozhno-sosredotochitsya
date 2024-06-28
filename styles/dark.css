@@ -1,30 +1,13 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-:root.theme_dark {
-  --display: visible;
-  --main-font: IBM Plex mono;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --heading-color: #db00ff;
-  --text-color-with-bg: #000028;
-  --bg-color: #000028;
-  --section-heading-color: #ff0070;
-  --heading-shadow-color: #ff0070;
-  --bg-image: url(../images/cover-image-dark.png);
-}
-
 .page.theme_dark {
   --display: visible;
-  --main-font: IBM Plex mono;
+  --main-font: "IBM Plex mono";
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --heading-color: #db00ff;
   --text-color-with-bg: #000028;
   --bg-color: #000028;
   --section-heading-color: #ff0070;
+  --border-with-opacity: 255, 0, 112;
   --heading-shadow-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
 }

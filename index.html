@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" sizes="any" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span class="header_pseudo-element"></span>
+      <span class="header_pseudo-element" aria-hidden="ture"></span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -89,42 +91,48 @@
         <h2 class="content_section-heading double-column">
           Что снижает концентрацию внимания?
         </h2>
-        <div class="section-few-columns">
-          <div>
-            <h3 class="section-subheading title-decor">Многозадачность</h3>
-            <p>
-              Как концентрация может снижаться из-за… концентрации? Любая
-              стрессовая ситуация (и резко меняющийся мир в целом) заставляет
-              наш мозг постоянно «сканировать» окружающую среду на предмет
-              опасности. Например, читать новости вместо работы. Но быть
-              собранными всё время — невозможно. Концентрация — мышца, и она
-              может не выдержать, если не давать ей отдохнуть.
-            </p>
-          </div>
-          <div>
-            <h3 class="section-subheading title-decor">Еда</h3>
-            <p>
-              «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
-              доставляют в мозг энергию и помогают ему лучше работать. Но уходит
-              эта энергия также быстро, как и приходит. А мы в результате
-              попадаем на «углеводные качели»: как только действие «быстрых
-              углеводов» заканчивается, мы чувствуем усталость и сонливость. И
-              хотим ещё больше быстрых углеводов.
-            </p>
-          </div>
-          <div>
-            <h3 class="section-subheading title-decor">Гаджеты</h3>
-            <p>
-              Да-да, это та самая ситуация, когда на экране ноутбука — код, в
-              наушниках — подкаст, а на компьютере фоном — ещё и видео с
-              забавными утятами. В результате мозг пытается переключиться с
-              одной задачи на другую — и просто не может. А чтобы вернуться к
-              состоянию полной концентрации, человеку в среднем нужно 20 минут.
-              Вот и получается, что чем больше времени мы проводим в гаджетах,
-              тем больше времени затем нужно, чтобы вернуться к работе.
-            </p>
-          </div>
-        </div>
+        <ul class="section-few-columns">
+          <li>
+            <article>
+              <h3 class="section-subheading title-decor">Многозадачность</h3>
+              <p>
+                Как концентрация может снижаться из-за… концентрации? Любая
+                стрессовая ситуация (и резко меняющийся мир в целом) заставляет
+                наш мозг постоянно «сканировать» окружающую среду на предмет
+                опасности. Например, читать новости вместо работы. Но быть
+                собранными всё время — невозможно. Концентрация — мышца, и она
+                может не выдержать, если не давать ей отдохнуть.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 class="section-subheading title-decor">Еда</h3>
+              <p>
+                «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
+                доставляют в мозг энергию и помогают ему лучше работать. Но уходит
+                эта энергия также быстро, как и приходит. А мы в результате
+                попадаем на «углеводные качели»: как только действие «быстрых
+                углеводов» заканчивается, мы чувствуем усталость и сонливость. И
+                хотим ещё больше быстрых углеводов.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 class="section-subheading title-decor">Гаджеты</h3>
+              <p>
+                Да-да, это та самая ситуация, когда на экране ноутбука — код, в
+                наушниках — подкаст, а на компьютере фоном — ещё и видео с
+                забавными утятами. В результате мозг пытается переключиться с
+                одной задачи на другую — и просто не может. А чтобы вернуться к
+                состоянию полной концентрации, человеку в среднем нужно 20 минут.
+                Вот и получается, что чем больше времени мы проводим в гаджетах,
+                тем больше времени затем нужно, чтобы вернуться к работе.
+              </p>
+            </article>
+          </li>
+        </ul>
       </section>
       <section class="content_section double-column">
         <h2 class="content_section-heading">
@@ -186,37 +194,37 @@
         </div>
       </section>
       <section class="content_gallery">
-        <h3 class="section-subheading title-decor">А можно в картинках?</h3>
+        <h2 class="section-subheading title-decor">А можно в картинках?</h2>
         <div class="gallery-pics">
           <img
             loading="lazy"
             src="./images/sunset.png"
             alt="Закат в мультипликационном стиле"
-            class="pic pic-1"
+            class="pic pic-extended-height"
           />
           <img
             loading="lazy"
             src="./images/ice-cream.png"
             alt="Живые фрукты в миске с мороженым"
-            class="pic pic-2"
+            class="pic pic-extended-width"
           />
           <img
             loading="lazy"
             src="./images/tape.png"
             alt="Кассета с восьмибитными облаками и курсором"
-            class="pic pic-3"
+            class="pic pic-extended-width"
           />
           <img
             loading="lazy"
             src="./images/books.png"
             alt="Стопка книг"
-            class="pic pic-4"
+            class="pic"
           />
           <img
             loading="lazy"
             src="./images/street.png"
             alt="Улица в мультипликационном стиле"
-            class="pic pic-5"
+            class="pic pic-extended-height"
           />
         </div>
       </section>
