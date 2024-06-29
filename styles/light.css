@@ -8,6 +8,7 @@
   --heading-shadow-color: #ff8dcb;
   --border-with-opacity: 50, 49, 45;
   --section-heading-color: #353430;
+  --bg-color: #ffeef6;
   --bg-image:url('../images/cover-image-light.png');
 }
 
@@ -25,11 +26,9 @@
     --heading-color: #ffc2e6;
     --text-color-with-bg: #353430;
     --heading-shadow-color: #ff8dcb;
+    --border-with-opacity: 50, 49, 45;
     --section-heading-color: #353430;
+    --bg-color: #ffeef6;
     --bg-image: url('../images/cover-image-light.png');
-  }
-
-  .header_pseudo-element{
-    display: var(--display);
   }
 }
